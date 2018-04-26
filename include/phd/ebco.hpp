@@ -64,7 +64,7 @@ namespace phd {
 	};
 
 	template <typename T>
-	struct ebco<T, std::enable_if_t<std::is_class_v<T>>> : T {
+	struct ebco<T, std::enable_if_t<std::is_class_v<T> && !std::is_final_v<T>>> : T {
 		ebco() = default;
 		ebco(const ebco&) = default;
 		ebco(ebco&&) = default;

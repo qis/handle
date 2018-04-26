@@ -45,13 +45,13 @@ parser.add_argument(
     help=
     'name and location of where to place file (and forward declaration file)',
     metavar='file',
-    default='sol.hpp')
+    default='handle.hpp')
 parser.add_argument('--quiet', help='suppress all output', action='store_true')
 args = parser.parse_args()
 
 single_file = ''
 forward_single_file = ''
-single_file = args.output[0]
+single_file = args.output
 if len(args.output) > 1:
     forward_single_file = args.output[1]
 else:

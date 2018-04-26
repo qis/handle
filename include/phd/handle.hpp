@@ -25,8 +25,8 @@
 #ifndef PHD_HANDLE_HANDLE_HPP
 #define PHD_HANDLE_HANDLE_HPP
 
-#include "phd/meta.hpp"
-#include "phd/ebco.hpp"
+#include <phd/meta.hpp>
+#include <phd/ebco.hpp>
 
 #include <type_traits>
 #include <memory>
@@ -224,7 +224,6 @@ namespace phd {
 	inline bool operator==(const handle<T, Dx>& left, typename handle<T, Dx>::pointer right) {
 		return left.get() == right;
 	}
-
 
 	template <typename T, typename Dx>
 	inline bool operator!=(const handle<T, Dx>& left, const handle<T, Dx>& right) {
