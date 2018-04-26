@@ -1,0 +1,5 @@
+.vs/
+build/
+.vscode/.ropeproject/objectdb
+.vscode/.ropeproject/config.py
+.mypy_cache/

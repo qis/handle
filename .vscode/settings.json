@@ -1,0 +1,14 @@
+{
+	"python.formatting.provider": "yapf",
+	"cmake.configureSettings": {
+		"HANDLE_TESTS": true,
+	},
+	"files.associations": {
+		"type_traits": "cpp",
+		"memory": "cpp",
+		"utility": "cpp",
+		"xmemory0": "cpp",
+		"xtr1common": "cpp",
+		"xutility": "cpp"
+	}
+}
